@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mt-5">
+            
+                <div class="form-group">
+                    <label>url</label>
+                    <input type="text" id="url-in" class="form-control" placeholder="url">
+                </div>
+                <button class="btn btn-primary" id="btn-control" onclick="createBookmark()">add Bookmark</button>
+        </div>
+        <div>
+            <input type="text" class="form-control mx-auto my-3 w-50" onkeyup="searchBookmark()" placeholder="search" id="search">
+        </div>
+        <div class="mt-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#ID</th>
+                        <th scope="col">URL</th>
+                        <th scope="col">update</th>
+                        <th scope="col">delete</th>
+                    </tr>
+                </thead>
+                <tbody id="urls">
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
